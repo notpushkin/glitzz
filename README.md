@@ -22,10 +22,10 @@ def draw_frame(canvas, position, duration):
     draw.line((0, frame.size[1], frame.size[0], 0), fill="white")
     return canvas
 
-
-print("Serving at port 8000. Run: ")
-print("    %s" % app.get_ffmpeg_command())
-app.run()
+if __name__ == "__main__":
+    print("Serving at port 8000. Run: ")
+    print("    %s" % app.get_ffmpeg_command())
+    app.run()
 ```
 
 This creates a 10-second video with frames like this:
