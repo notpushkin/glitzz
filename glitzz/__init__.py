@@ -52,6 +52,6 @@ class Glitzz:
         frame.save(f, "bmp", compress_level=0)
         return [f.getvalue()]
 
-    def run(port=8000):
-        server = make_server("", port, app)
+    def run(self, port=8000):
+        server = make_server("", port, self)
         server.serve_forever()
